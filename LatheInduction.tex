@@ -1,0 +1,40 @@
+\documentclass[11pt,a5paper,twoside,openany]{book}
+\usepackage[pass]{geometry}
+
+\usepackage{titlesec}
+\titleformat{\chapter}
+  {\bfseries} 		% format
+  {\null}                % label
+  {0pt}             % sep
+  {\Large}           % before-code
+
+\usepackage{latexsym}
+\newenvironment{checklist}{
+  \begin{list}{}{}
+  \let\olditem\item
+  \renewcommand\item{\olditem[$\Box$] }
+}{%
+  \end{list}
+}
+
+\title{\textbf{HACMan ML7 Induction}}
+\author{Gregory Morris}
+\date{}
+\begin{document}
+
+\maketitle
+\chapter{Health and Safety}
+\begin{checklist}
+\item Do not use the lathe whilst alone in the space.
+\item Tie back long hair and clothing.
+\item Avoid wearing gloves.
+\item Wear safety glasses or goggles (Most prescription glasses are not suitable on their own).
+\item Ensure the belt guard is down before starting the lathe.
+\item Avoid touching the chuck or work whilst spinning.
+\item Avoid touching the swarf - it can be very sharp.
+\end{checklist}
+
+
+
+
+\end{document}
